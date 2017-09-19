@@ -447,6 +447,8 @@ section main {
     padding-left: 7%;
     font-family: Consolas, monospace;
     font-size: 1.2em;
+    padding-right: 7%;
+    padding-top: 5%;
     /*overflow-y: scroll;*/
 }
 
@@ -459,7 +461,7 @@ section .heading {
     font-family: Menlo, monospace;
     font-size: 1.3em;
     font-weight: bold;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 #home_main {
@@ -483,6 +485,10 @@ section .heading {
   font-size: 1.2em;
   text-align: right; 
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#achievements > .info {
+  padding-top: 10%;
 }
 
 .overlay {
