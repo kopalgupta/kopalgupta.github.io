@@ -1,207 +1,349 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Kopal Gupta</title>
-	<link rel="stylesheet" type="text/css" href="styles/index.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kopal Gupta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
 </head>
+<body>    
 
-<body>
-<div class="main_bg"><img src="images/main1.jpg"></div>
-	<div id="main">
-		<header>
-			<div id="fixedbar">
-				<nav>
-					<ul>
-                		<li><a href="#about_me">About Me</a> </li>
-                		<li><a href="#education">Education</a> </li>
-                		<li><a href="#coursework">University <br>Coursework</a> </li>
-                		<li><a href="#skills">Skills</a> </li>
-                		<li><a href="#research">Research <br>Work</a></li>
-                		<li><a href="#achievements">Selected <br>Achievements</a></li>
-                		<li><a href="#societies">Technical <br>Societies</a></li>
-            		</ul>
-				</nav>
-			</div>
-		</header>
-	</div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">Quick Links</li>
+                <li><a href="#home_main">Home </a> </li>
+                <li><a href="#education">Education</a> </li>
 
-	<main>
+                <li class="dropdown">
+                  <a data-target="#" href="#coursework" class="dropdown-toggle" data-toggle="dropdown">University <br>Coursework <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Years</li>
+                    <li><a href="#freshman">Freshman </a></li>
+                    <li><a href="#sophomore">Sophomore </a></li>
+                    <li><a href="#junior">Junior </a></li>
+                    <li><a href="#senior">Senior </a></li>
+                  </ul>
+                </li>
 
-	<section id="about_me">
-		<header>Kopal Gupta</header>
-		<div class="connect">
-			gkopal97@gmail.com | <a href="https://github.com/kopalgupta">GitHub</a>
-		</div>
-		<main>
-			<p>I am a university sophomore currently pursuing bachelors in Information Technology. I love programming, science and music. </p>
-		</main>
-	</section>
+                <li class="dropdown">
+                  <a data-target="#" href="#skills" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <!-- <li class="dropdown-header">Years</li> -->
+                    <li class="dropdown-element"><a href="#">Technical <br>Skills </a></li>
+                    <li class="dropdown-element"><a href="#">Soft <br>Skills </a></li>
+                  </ul>
+                </li>
 
-	<section id="education">
-		<header>
-			<div class="title">Education</div>
-		</header>
-		<main>
-			<ul>
-				<li>
-					<div class="heading">
-						Indira Gandhi Delhi Technical University for Women <br>Delhi, India
-					</div>
-					<div class="info">
-						Bachelor of Technology (B.Tech.) in Information Technology <br>August 2015 - present <br>Expected Graduation: June 2019
-					</div>
-				</li>
-				<li>
-					<div class="heading">
-						Amity International School, Mayur Vihar <br>Delhi, India
-					</div>
-					<div class="info">
-						High School, Central Board of Secondary Education (CBSE) <br>Aggregate in grade 12: 95.2% <br>CGPA in grade 10: 10.0
-					</div>
-				</li>
-			</ul>
-		</main>
-	</section>
+                <li class="dropdown">
+                  <a data-target="#" href="#summer" class="dropdown-toggle" data-toggle="dropdown">Summer <br>Experiences <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Years</li>
+                    <li><a href="#">2017</a></li>
+                  </ul>
+                </li>
 
-	<section id="coursework">
-		<header>
-			<div class="title">University Coursework</div>
-		</header>
-		<main>
-		<ul>
-			<li>
-				<div class="heading">Year 1</div>
-				<div class="info">
-					Applied Mathematics I and II, Applied Physics I and II, Applied Chemistry, Environmental Sciences, Elements of Mechanical Engineering, Engineering Mechanics, Communication Skills I and II
-				</div>
-			</li>
-			<li>
-				<div class="heading">Year 2</div>
-				<div class="info">
-					Discrete Mathematics, Data Structures, Database Management Systems, Object Oriented Programming, Analog and Digital Electronics Advanced Engineering Mathematics, Computer Organisation and Architecture, Analysis and Design of Algorithms, Operating Systems, Object Oriented Software Engineering
-				</div>
-			</li>
-		</ul>
-		</main>
-	</section>
+                <li><a href="#research">Research <br>Work</a></li>
+                <li><a href="#achievements">Selected <br>Achievements</a></li>
+                <li><a href="#extra_courses">Extra <br>Courses </a></li>
 
-	<section id="skills">
-		<header>
-			<div class="title">Skills</div>
-		</header>
-		<main>
-		<ul>
-			<li>
-				<div class="heading">Technical Skills</div>
-				<ul class="info">
-					<li>
-						Languages: C/C++, Java, Ruby, HTML/CSS, JavaScript, Python, MySQL
-					</li>
-					<li>
-						Frameworks: Rails
-					</li>
-					<li>
-						UNIX/LINUX
-					</li>
-					<li>
-						Git/GitHub
-					</li>
-				</ul>
-			</li>
-			<li>
-				<div class="heading">Soft Skills</div>
-				<ul class="info">
-					
-				</ul>
-			</li>
-		</ul>
-		</main>
-	</section>
+                <li class="dropdown">
+                  <a data-target="#" href="#societies" class="dropdown-toggle" data-toggle="dropdown">Societies <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <!-- <li class="dropdown-header">Dropdown heading</li> -->
+                    <li class="dropdown-element"><a href="#tech_soc">Technical <br>Societies </a></li>
+                    <li class="dropdown-element"><a href="#nontech_soc">Non-Technical <br>Societies </a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Contact </a></li>
+                <li><a href="https://twitter.com/kopalgupta07">Downloads</a></li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
 
-	<section id="research">
-		<header>
-			<div class="title">My Research Work</div>
-		</header>
-		<main>
-			<div class="heading">
-				Kit for detection and removal of pesticides from the surface of fruits and vegetables
-			</div>
-			<div class="info">
-				(Independent Research May 2013 - February 2015)
-				<ul>
-					<li>
-						Testing Mechanism for detecting commonly used pesticides in fruits and vegetables using chemically prepared test strips.
-					</li>
-					<li>
-						Studying the efficacy of Activated Carbon for removal of pesticides from the surface of fruits and vegetables
-					</li>
-				</ul>
-				<br>Applied for a patent (Application number: 75/DEL/2015) at Intellectual Property Office, Delhi.
-			</div>
-		</main>
-	</section>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
 
-	<section id="achievements">
-		<header>
-			<div class="title">Selected Achievements</div>
-		</header>
-		<main>
-			<div class="info">
-			<ul>
-				<li>
-					Felicitated at Arizona State University Sustainability Solutions Festival 2015 for independent research work in Analytical Chemistry.
-				</li>
-				<li>
-					Felicitated at Rashtriya Avishkar Abhiyan (National Innovation Scheme) Launch Ceremony 2015 for research work by Department of Science and Technology.
-				</li>
-				<li>
-					Received the Excellence in Science and Technology Award at Amity International School Felicitation Day 2015.
-				</li>
-				<li>
-					Won the Rob and Melani Walton Sustainability Solutions Award and Scholarship at Intel International Science and Engineering Fair 2014.
-				</li>
-				<li>
-					Won the ISEF 4th Grand Award and scholarship in Chemistry at Intel International Science and Engineering Fair 2014.
-				</li>
-				<li>
-					Received the 1st Grand Award and Gold Medal at Intel IRIS National Fair 2013.
-				</li>
-			</ul>
-			</div>
-		</main>
-	</section>
+                <section id="mainpage">
+                <div id="home_main">
+                    <!-- <header>Kopal Gupta</header> -->
+                    <div id="name">Kopal Gupta</div>
+                    <main>
+                        <p>I am a university junior currently pursuing bachelors in Information Technology. <br>I love programming, science and music. </p>
+                    </main>
+                </div>
+                </section>
 
-	<section id="societies">
-		<header>
-			<div class="title">Technical Societies and Activites</div>
-		</header>
-		<main>
-			<div class="info">
-			<ul>
-				<li>
-					Member of Association for Computer Machinery (ACM) IGDTUW Student Chapter.
-				</li>
-				<li>
-					Member of Society for Science and Public (SSP) Intel ISEF Community.
-				</li>
-				<li>
-					Member of Entrepreneurship and Development Cell (EDC), IGDTUW.
-				</li>
-				<li>
-					Organising Team of TEDx IGDTU.
-				</li>
-				<li>
-					Head-Coordinator at Taarangana, Cultural Fest of IGDTUW.
-				</li>
-			</ul>
-			</div>
-		</main>
-	</section>
+                <section>
+                <div id="education">
+                    <header>
+                        <div class="title">Education</div>
+                    </header>
+                    <main>
+                        <ul>
+                            <li>
+                                <div class="heading">
+                                    Indira Gandhi Delhi Technical University for Women <br>Delhi, India
+                                </div>
+                                <div class="info">
+                                    Bachelor of Technology (B.Tech.) in Information Technology <br>August 2015 - present <br>Expected Graduation: June 2019
+                                </div>
+                            </li>
+                            <li>
+                                <div class="heading">
+                                    Amity International School, Mayur Vihar <br>Delhi, India
+                                </div>
+                                <div class="info">
+                                    High School, Central Board of Secondary Education (CBSE) <br>Aggregate in grade 12: 95.2% <br>CGPA in grade 10: 10.0
+                                </div>
+                            </li>
+                        </ul>
+                    </main>
+                </div>
+                </section>
 
-	</main>
+                <section>
+                <div id="coursework">
+                    <header>
+                        <div class="title">University Coursework</div>
+                    </header>
+                    <main>
+                    <ul>
+                        <li>
+                            <div class="heading">Year 1</div>
+                            <div class="info">
+                                Applied Mathematics I and II, Applied Physics I and II, Applied Chemistry, Environmental Sciences, Elements of Mechanical Engineering, Engineering Mechanics, Communication Skills I and II
+                            </div>
+                        </li>
+                        <li>
+                            <div class="heading">Year 2</div>
+                            <div class="info">
+                                Discrete Mathematics, Data Structures, Database Management Systems, Object Oriented Programming, Analog and Digital Electronics Advanced Engineering Mathematics, Computer Organisation and Architecture, Analysis and Design of Algorithms, Operating Systems, Object Oriented Software Engineering
+                            </div>
+                        </li>
+                        <li>
+                            <div class="heading">Year 3</div>
+                            <div class="info">
+                                Theory of computation, Computer Graphics and Multimedia, Requirement and Estimation Techniques, Data Communication and Computer Networks, Data Warehousing and Data Mining, Human Values and Professional Ethics, Web and Mobile Technologies, Compiler Design, Network Programming, Cloud Computing, Artificial Intelligence, Engineering Economics
+                            </div>
+                        </li>
+                    </ul>
+                    </main>
+                </div>
+                </section>
 
+                <section>
+                <div id="skills">
+                    <header>
+                        <div class="title">Technical Skills</div>
+                    </header>
+                    <main>
+                    <ul>
+                        <li>
+                            <div class="heading">Technical Skills</div>
+                            <ul class="info">
+                                <li>
+                                    Languages: C/C++, Java, Ruby, HTML/CSS, JavaScript, Python, MySQL, Node.js
+                                </li>
+                                <li>
+                                    Frameworks: Rails, Sinatra, jQuery, Express.js, Socket.io
+                                </li>
+                                <li>
+                                    UNIX/LINUX
+                                </li>
+                                <li>
+                                    Git/GitHub
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="heading">Soft Skills</div>
+                            <ul class="info">
+                                <li>
+                                    Successfully lead the Event Management team for a couple of events at Taarangana, the cultural fest of IGDTUW.
+                                </li>
+                                <li>
+                                    Expertly coordinated the organisation of many 'Expert Talk' sessions under the ACM IGDTUW Chapter with the ACM core team.
+                                </li>
+                                <li>
+                                    Efficiently conducted sessions on Open Source for university students on Open Source. 
+                                </li>
+                                <li>
+                                    Always enthusiastic to take up challenges and solve complex problems.
+                                </li>
+                                <li>
+                                    Share a good rapport with fellow university students and teaching faculty.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </main>
+                </div>
+                </section>
+
+                <section>
+                <div id="exp">
+                    <header>
+                        <div class="title">Summer Experiences</div>
+                    </header>
+                    <main>
+                    <ul>
+                    <li>
+                        <div class="heading">
+                            Summer School at IIIT Hyderabad, July 2017
+                        </div>
+                        <div class="info">
+                            Attended PSOSN Summer school at International Institute of Information Technology, Hyderabad. The agenda of the summer school was <b>Privacy and Security of Online Social Networks</b>. Worked on retieval of data from some popular online social networks (using their APIs) and their analysis using Machine Learning Techniques &amp; Graphing methods.
+                            Also, attended lectures by experts from the field and particiapted in ideation events to solve some common privacy &amp; security issues on online social networks.
+                        </div>
+                    </li>
+                    </ul>
+                    </main>
+                </div>
+                </section>
+
+                <section>
+                <div id="research">
+                    <header>
+                        <div class="title">Research Work</div>
+                    </header>
+                    <main>
+                        <div class="heading">
+                            Kit for detection and removal of pesticides from the surface of fruits and vegetables
+                        </div>
+                        <div class="info">
+                            (Independent Research May 2013 - February 2015)
+                            <ul>
+                                <li>
+                                    Testing Mechanism for detecting commonly used pesticides in fruits and vegetables using chemically prepared test strips.
+                                </li>
+                                <li>
+                                    Studying the efficacy of Activated Carbon for removal of pesticides from the surface of fruits and vegetables
+                                </li>
+                            </ul>
+                            <br>Applied for a patent (Application number: 75/DEL/2015) at Intellectual Property Office, Delhi.
+                        </div>
+                    </main>
+                </div>
+                </section>
+
+                <section>
+                <div id="achievements">
+                    <header>
+                        <div class="title">Selected Achievements</div>
+                    </header>
+                    <main>
+                        <div class="info">
+                        <ul>
+                            <li>
+                                Felicitated at Arizona State University Sustainability Solutions Festival 2015 for independent research work in Analytical Chemistry.
+                            </li>
+                            <li>
+                                Felicitated at Rashtriya Avishkar Abhiyan (National Innovation Scheme) Launch Ceremony 2015 for research work by Department of Science and Technology.
+                            </li>
+                            <li>
+                                Received the Excellence in Science and Technology Award at Amity International School Felicitation Day 2015.
+                            </li>
+                            <li>
+                                Won the Rob and Melani Walton Sustainability Solutions Award and Scholarship at Intel International Science and Engineering Fair 2014.
+                            </li>
+                            <li>
+                                Won the ISEF 4th Grand Award and scholarship in Chemistry at Intel International Science and Engineering Fair 2014.
+                            </li>
+                            <li>
+                                Received the 1st Grand Award and Gold Medal at Intel IRIS National Fair 2013.
+                            </li>
+                        </ul>
+                        </div>
+                    </main>
+                </div>
+                </section>
+
+                <section>
+                <div id="societies">
+                    <header>
+                        <div class="title">Tech Societies and Activites</div>
+                    </header>
+                    <main>
+                        <div class="info">
+                        <ul>
+                            <li>
+                                Attended PSOSN (Privacy and Security of Online Social Networks) Summer School at IIIT Hyderabad in Summer 2017.
+                            </li>
+                            <li>
+                                Member of Association for Computer Machinery (ACM) IGDTUW Student Chapter. Instructor for Open Source sessions conducted by ACM IGDTUW Student Chapter.
+                            </li>
+                            <li>
+                                Member of Society for Science and Public (SSP) Intel ISEF Community.
+                            </li>
+                            <li>
+                                Member of Entrepreneurship and Development Cell (EDC), IGDTUW.
+                            </li>
+                            <li>
+                                Organising Team of TEDx IGDTU.
+                            </li>
+                            <li>
+                                Head-Coordinator at Taarangana, Cultural Fest of IGDTUW.
+                            </li>
+                            <li>
+                                Participated in Django Girls and Rails Bootcamps.
+                            </li>
+                        </ul>
+                        </div>
+                    </main>
+                </div>
+                </section>
+
+                        <!-- <h1>Fancy Toggle Sidebar Navigation</h1>
+                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
+                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p> 
+                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
+                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
+                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
+                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
+                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
+                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
+                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
+                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>       -->                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
 </body>
-
 </html>
