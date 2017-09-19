@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
-
 </head>
 <body>    
 
@@ -39,8 +38,8 @@
                   <a data-target="#" href="#skills" class="dropdown-toggle" data-toggle="dropdown">Skills <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <!-- <li class="dropdown-header">Years</li> -->
-                    <li class="dropdown-element"><a href="#">Technical <br>Skills </a></li>
-                    <li class="dropdown-element"><a href="#">Soft <br>Skills </a></li>
+                    <li class="dropdown-element"><a href="#techskills">Technical <br>Skills </a></li>
+                    <li class="dropdown-element"><a href="#softskills">Soft <br>Skills </a></li>
                   </ul>
                 </li>
 
@@ -48,24 +47,26 @@
                   <a data-target="#" href="#exp" class="dropdown-toggle" data-toggle="dropdown">Summer <br>Experiences <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">Years</li>
-                    <li><a href="#">2017</a></li>
+                    <li><a href="#summer17">2017</a></li>
                   </ul>
                 </li>
 
                 <li><a href="#research">Research <br>Work</a></li>
                 <li><a href="#achievements">Selected <br>Achievements</a></li>
-                <li><a href="#extra_courses">Extra <br>Courses </a></li>
+                <!-- <li><a href="#extra_courses">Extra <br>Courses </a></li> -->
 
                 <li class="dropdown">
                   <a data-target="#" href="#societies" class="dropdown-toggle" data-toggle="dropdown">Societies <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <!-- <li class="dropdown-header">Dropdown heading</li> -->
-                    <li class="dropdown-element"><a href="#tech_soc">Technical <br>Societies </a></li>
-                    <li class="dropdown-element"><a href="#nontech_soc">Non-Technical <br>Societies </a></li>
+                    <!-- <li class="dropdown-header">Types</li>
+                    <li><a href="#tech_socs">Technical Societies</a></li>
+                    <li><a href="#nontech_socs">Non-Technical Societies</a></li> -->
+                    <li class="dropdown-element"><a href="#tech_socs">Technical <br>Societies </a></li>
+                    <li class="dropdown-element"><a href="#nontech_socs">Non-Technical <br>Societies </a></li>
                   </ul>
                 </li>
-                <li><a href="#contact">Contact </a></li>
-                <li><a href="https://twitter.com/kopalgupta07">Downloads</a></li>
+                <li><a href="#connect">Connect </a></li>
+                <li><a href="">Downloads</a></li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
@@ -127,22 +128,28 @@
                     <main>
                     <ul>
                         <li>
+                        <div id="freshman">
                             <div class="heading">Year 1</div>
                             <div class="info">
                                 Applied Mathematics I and II, Applied Physics I and II, Applied Chemistry, Environmental Sciences, Elements of Mechanical Engineering, Engineering Mechanics, Communication Skills I and II
                             </div>
+                        </div>
                         </li>
                         <li>
+                        <div id="sophomore">
                             <div class="heading">Year 2</div>
                             <div class="info">
                                 Discrete Mathematics, Data Structures, Database Management Systems, Object Oriented Programming, Analog and Digital Electronics Advanced Engineering Mathematics, Computer Organisation and Architecture, Analysis and Design of Algorithms, Operating Systems, Object Oriented Software Engineering
                             </div>
+                        </div>
                         </li>
                         <li>
+                        <div id="junior">
                             <div class="heading">Year 3</div>
                             <div class="info">
                                 Theory of computation, Computer Graphics and Multimedia, Requirement and Estimation Techniques, Data Communication and Computer Networks, Data Warehousing and Data Mining, Human Values and Professional Ethics, Web and Mobile Technologies, Compiler Design, Network Programming, Cloud Computing, Artificial Intelligence, Engineering Economics
                             </div>
+                        </div>
                         </li>
                     </ul>
                     </main>
@@ -152,11 +159,12 @@
                 <section>
                 <div id="skills">
                     <header>
-                        <div class="title">Technical Skills</div>
+                        <div class="title">Skills</div>
                     </header>
                     <main>
                     <ul>
                         <li>
+                        <div id="techskills">
                             <div class="heading">Technical Skills</div>
                             <ul class="info">
                                 <li>
@@ -172,8 +180,10 @@
                                     Git/GitHub
                                 </li>
                             </ul>
+                        </div>
                         </li>
                         <li>
+                        <div id="softskills">
                             <div class="heading">Soft Skills</div>
                             <ul class="info">
                                 <li>
@@ -192,6 +202,7 @@
                                     Share a good rapport with fellow university students and teaching faculty.
                                 </li>
                             </ul>
+                        </div>
                         </li>
                     </ul>
                     </main>
@@ -206,6 +217,7 @@
                     <main>
                     <ul>
                     <li>
+                    <div id="summer17">
                         <div class="heading">
                             Summer School at IIIT Hyderabad, July 2017
                         </div>
@@ -213,6 +225,7 @@
                             Attended PSOSN Summer school at International Institute of Information Technology, Hyderabad. The agenda of the summer school was <b>Privacy and Security of Online Social Networks</b>. Worked on retieval of data from some popular online social networks (using their APIs) and their analysis using Machine Learning Techniques &amp; Graphing methods.
                             Also, attended lectures by experts from the field and participated in ideation events to solve some common privacy &amp; security issues on online social networks.
                         </div>
+                    </div>
                     </li>
                     </ul>
                     </main>
@@ -279,14 +292,17 @@
                 <section>
                 <div id="societies">
                     <header>
-                        <div class="title">Tech Societies and Activites</div>
+                        <div class="title">Societies</div>
                     </header>
                     <main>
+                    <ul>
+                    <li>
+                    <div id="tech_socs">
+                        <div class="heading">
+                            Technical Societies
+                        </div>
                         <div class="info">
                         <ul>
-                            <li>
-                                Attended PSOSN (Privacy and Security of Online Social Networks) Summer School at IIIT Hyderabad in Summer 2017.
-                            </li>
                             <li>
                                 Member of Association for Computer Machinery (ACM) IGDTUW Student Chapter. Instructor for Open Source sessions conducted by ACM IGDTUW Student Chapter.
                             </li>
@@ -296,17 +312,45 @@
                             <li>
                                 Member of Entrepreneurship and Development Cell (EDC), IGDTUW.
                             </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div id="nontech_socs">
+                        <div class="heading">
+                            Non-Technical Societies
+                        </div>
+                        <div class="info">
+                        <ul>
                             <li>
                                 Organising Team of TEDx IGDTU.
                             </li>
                             <li>
                                 Head-Coordinator at Taarangana, Cultural Fest of IGDTUW.
                             </li>
-                            <li>
-                                Participated in Django Girls and Rails Bootcamps.
-                            </li>
                         </ul>
                         </div>
+                    </div>
+                    </li>
+                    </ul>
+                    </main>
+                </div>
+                </section>
+
+                <section>
+                <div id="connect">
+                    <header>
+                        <div class="title">Let's Connect!</div>
+                    </header>
+                    <main>
+                        <ul class="logos">
+                            <li class="logo"><a href="https://www.github.com/kopalgupta" target="_blank"><img class="logo" src="logos/github.png" /></li>
+                            <li class="logo"><a href="https://www.linkedin.com/in/kopalgupta07/" target="_blank"><img class="logo" src="logos/linkedin.png" /></li>
+                            <li class="logo"><a href="mailto:gkopal97@gmail.com"><img class="logo" src="logos/gmail.png" /></li>
+                            <li class="logo"><a href="https://twitter.com/kopalgupta07" target="_blank"><img class="logo" src="logos/twitter.png" /></li>
+                            <li class="logo"><a href="https://www.facebook.com/kg.quasar" target="_blank"><img class="logo" src="logos/facebook.png" /></li>
+                        </ul>
                     </main>
                 </div>
                 </section>

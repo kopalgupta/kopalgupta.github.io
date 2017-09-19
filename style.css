@@ -491,6 +491,31 @@ section .heading {
   padding-top: 10%;
 }
 
+ul.logos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*align-items: center;*/
+    text-align: center;
+    /*padding-left: 35%;*/
+
+}
+
+li.logo {
+    padding-top: 10%;
+    padding-left: 4%;
+    display: inline-block;
+}
+
+img.logo {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+
 .overlay {
     position: fixed;
     display: none;
@@ -545,5 +570,34 @@ section .heading {
       padding: 7%;
       font-weight: 300;
       text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  }
+
+  ul.logos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*align-items: center;*/
+    /*padding-left: 35%;*/
+    /*text-align: center;*/
+    /*display: flex;
+    align-items: center;*/
+  }
+
+  li.logo {
+      padding-top: 10%;
+      padding-left: 40%;
+      /*list-style-type: none;*/
+/*      height: 70px;
+      line-height: 70px;*/
+      /*vertical-align: middle;*/
+      display: block;
+      /*vertical-align: middle;*/
+  }
+
+  img.logo {
+      max-width: 70px;
+      max-height: 70px;
+      width: auto;
+      height: auto;
   }
 }
