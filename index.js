@@ -10,6 +10,11 @@ $(document).ready(function () {
       hamburger_cross();      
     });
 
+    // $('.abc').click(function() {
+    //   // hamburger_cross();
+    //   $('#wrapper').toggleClass('toggled');
+    // });
+
     function hamburger_cross() {
 
       if (isClosed == true) {          
@@ -23,7 +28,12 @@ $(document).ready(function () {
         trigger.addClass('is-open');
         isClosed = true;
       }
-  }
+    }
+
+    $('.menu_items').click(function() {
+      hamburger_cross();
+      $('#wrapper').toggleClass('toggled');
+    });
   
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
