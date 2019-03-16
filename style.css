@@ -568,6 +568,12 @@ img.logo {
 
 @media (max-width: 720px) {
 
+    section:nth-of-type(1){
+        background-image: url("images/image_01.jpg");
+        /*background-repeat: no-repeat;*/
+        background-size: 100% 80%;
+    }
+
     .container {
         /*height: auto;*/
         width: auto;
@@ -598,15 +604,55 @@ img.logo {
         font-size: 1.0em;
     }
 
+    #home_main {
+        /*display: block;*/
+        vertical-align: bottom;
+        color: black;
+        /*padding-top: 80%;*/
+        padding-bottom: 0;
+    }
+
     #name {
-      color: white;
+      /*position: absolute;*/
+      color: black;
       font-family: Palatino, Georgia, Serif;
-      font-weight: bold;
-      font-size: 3.3em;
+      font-weight: normal;
+      font-size: 2em;
       text-align: center;
-      padding: 7%;
-      font-weight: 300;
-      text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      /*padding: 7%;*/
+      padding-top: 100%;
+      padding-bottom: 0%;
+      margin-bottom: 0;
+      /*top: 200px;
+      left: 55px;*/
+      /*margin-top: 70%;*/
+      font-weight: 150;
+      text-shadow: none;
+  }
+
+  #home_main main {
+      font-size: 0.8em;
+      padding-left: 2%;
+  }
+  #home_main main p {
+      font-family: Consolas, monospace;
+      /*font-size: 1em;*/
+      text-align: center; 
+  /*text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;*/
+  }
+
+  #home_main .logos2 {
+    margin-left: 0%;
+    /*margin-top: 10%*/
+    padding-bottom: 17%;
+  }
+
+  #home_main .logos2 img {
+    padding-top: 2px;
+    width: 14%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 0;
   }
 
   ul.logos {
